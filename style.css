@@ -38,3 +38,19 @@
 .flex-item:not(:last-child) {
     margin-bottom: 10px;
 }
+ #Posts > div{
+
+    background-color: aqua;
+    font-size: 2em;
+    border-radius: 30px;
+    display:flex;
+   
+ }
+img{
+    width :200px;
+    height: 200px;
+    
+
+    position: relative;
+    
+ }

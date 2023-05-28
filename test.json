@@ -1,0 +1,35 @@
+[{ 
+    "Resturant_id": 1,
+    "Resturant_name": "Roadster",
+    "Address": "Zaytouna Bey",
+    "email": "Info@roadster.com",
+    "image":"https://sayajihotels.com/images/innerBanner/sayaji-indore-dining.jpg"
+},
+{
+    "Resturant_id": 2,
+    "Resturant_name": "leyla",
+    "Address": "Zaytouna Bey",
+    "email": "Info@leyla.com",
+    "image":"https://sayajihotels.com/images/innerBanner/sayaji-indore-dining.jpg"
+  }, {
+    "Resturant_id": 3,
+    "Resturant_name": "Crepaway",
+    "Address": "Zaytouna Bey",
+    "email": "Info@Crepaway.com",
+    "image":"https://sayajihotels.com/images/innerBanner/sayaji-indore-dining.jpg"
+  }, {
+    "Resturant_id": 4,
+    "Resturant_name": "Macdonalds",
+    "Address": "Zaytouna Bey",
+    "email": "Info@Macdonalds.com",
+    "image":"https://sayajihotels.com/images/innerBanner/sayaji-indore-dining.jpg"
+  },
+  {
+    "Resturant_id":"",
+    "Resturant_name": "",
+    "Address": "",
+    "email": "",
+    "image":""
+  }
+
+]
