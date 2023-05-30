@@ -47,10 +47,12 @@
    
  }
 img{
-    width :200px;
+    width: 300px;
     height: 200px;
-    
 
-    position: relative;
     
  }
+ @media only screen and (min-width:800px){
+    img{
+  column-count: 1;
+    }}

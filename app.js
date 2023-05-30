@@ -5,10 +5,9 @@ function appendData(data) {
     
     data.forEach(element => {
         let div = document.createElement("div");
-        div.innerHTML =` Resturant id ${element.Resturant_id} resturant name ${element.Resturant_name} address ${element.Address}
+        div.innerHTML =`${element.Resturant_id} resturant name ${element.Resturant_name} address ${element.Address}
         email ${element.email} <img src=${element.image}>`;
         let divimage=document.createElement("divimage");
-        
         mainContainer.appendChild(div);
         imageContainer.appendChild(divimage);
         
@@ -60,7 +59,7 @@ getPosts();
 function check(form)
 {
 
- if(form.email.value == "walid@live.com" && form.password.value == "P@ssword")
+ if(form.email.value == "walidhomsi50@gmail.com" && form.password.value == "P@ssword")
   {
     window.open('dashboard.html')
   }
