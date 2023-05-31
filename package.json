@@ -1,0 +1,28 @@
+{
+  "name": "images-display",
+  "version": "1.0.0",
+  "description": "Dashboard display",
+  "main": "login.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaled9544/vanilla-js.git"
+  },
+  "keywords": [
+    "dashboard",
+    "js",
+    "restaurants"
+  ],
+  "author": "Walid Khaled",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaled9544/vanilla-js/issues"
+  },
+  "homepage": "https://github.com/khaled9544/vanilla-js#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
