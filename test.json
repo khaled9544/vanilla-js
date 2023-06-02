@@ -1,31 +1,130 @@
 {
   "restaurants": [
     {
-      "Resturant_id": 1,
-      "Resturant_name": "Roadster",
+      "restaurant_id": 1,
+      "restaurant_name": "Roadster",
       "Address": "Zaytouna Bey",
       "email": "Info@roadster.com",
-      "image": "https://pluggedproduction.com/wp-content/uploads/2020/04/ROADSTER-NEW-MENU_advertising_print_PLUGGED_PRODUCTION_1637-scaled.jpg"
+      "Price": "30-50 $ per two",
+      "Rating": "4.8",
+      "image": "https://pluggedproduction.com/wp-content/uploads/2020/04/ROADSTER-NEW-MENU_advertising_print_PLUGGED_PRODUCTION_1637-scaled.jpg",
+      "Phone":"01966555",
+      "Website":"https://roadsterdiner.com/"
     },
     {
-      "Resturant_id": 2,
-      "Resturant_name": "leyla",
+      "restaurant_id": 2,
+      "restaurant_name": "leyla",
       "Address": "Zaytouna Bey",
       "email": "Info@leyla.com",
-      "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Hyl05o328mXf2RInYqdhHg/348s.jpg"
+      "Price": "80-100 $ per two",
+      "Rating": "5",
+      "image": "https://s3-media0.fl.yelpcdn.com/bphoto/Hyl05o328mXf2RInYqdhHg/348s.jpg",
+      "Phone":"01962541",
+      "Website":"https://roadsterdiner.com/"
     },
     {
-      "Resturant_id": 3,
-      "Resturant_name": "Crepaway",
+      "restaurant_id": 3,
+      "restaurant_name": "Crepaway",
       "Address": "Zaytouna Bey",
       "email": "Info@Crepaway.com",
-      "image": "https://pbs.twimg.com/profile_images/1113328092498604032/NKqLXdEa_400x400.png"
+      "Price": "30-50 $ per two",
+      "Rating": "4.3",
+      "image": "https://pbs.twimg.com/profile_images/1113328092498604032/NKqLXdEa_400x400.png",
+      "Phone":"01932114",
+      "Website":"https://roadsterdiner.com/"
     },
     {
-      "Resturant_id": 4,
-      "Resturant_name": "Macdonalds",
+      "restaurant_id": 4,
+      "restaurant_name": "Macdonalds",
       "Address": "Zaytouna Bey",
       "email": "Info@Macdonalds.com",
-      "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg"
-    }]
+      "Price": "10-20 $ per two",
+      "Rating": "4",
+      "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg",
+      "Phone":"01935000",
+      "Website":"https://roadsterdiner.com/"
+     }, {
+      "restaurant_id": 5,
+      "restaurant_name": "Macdonalds",
+      "Address": "Zaytouna Bey",
+      "email": "Info@Macdonalds.com",
+      "Price": "10-20 $ per two",
+      "Rating": "4",
+      "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg",
+      "Phone":"01935000",
+      "Website":"https://roadsterdiner.com/"
+     }, {
+      "restaurant_id": 6,
+      "restaurant_name": "Macdonalds",
+      "Address": "Zaytouna Bey",
+      "email": "Info@Macdonalds.com",
+      "Price": "10-20 $ per two",
+      "Rating": "4",
+      "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg",
+      "Phone":"01935000",
+      "Website":"https://roadsterdiner.com/"
+     }, {
+      "restaurant_id": 7,
+      "restaurant_name": "Macdonalds",
+      "Address": "Zaytouna Bey",
+      "email": "Info@Macdonalds.com",
+      "Price": "10-20 $ per two",
+      "Rating": "4",
+      "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg",
+      "Phone":"01935000"
+     }, {
+      "restaurant_id": 8,
+      "restaurant_name": "Zaatar & zeit",
+      "Address": "Zaytouna Bey",
+      "email": "Info@zaatar.com",
+      "Price": "10-20 $ per two",
+      "Rating": "4",
+      "image": "https://64.media.tumblr.com/add2ad0de9cbfa4d919cfdb7714ccb17/9f44d371e867ac6e-19/s500x750/43d4e59ce0cfe02fdd6b365f49d631dcb6e008e5.png",
+      "Phone":"01935000",
+      "Website":"https://www.zaatarwzeit.net/"
+      },
+      {
+        "restaurant_id": 9,
+        "restaurant_name": "Macdonalds",
+        "Address": "Zaytouna Bey",
+        "email": "Info@Macdonalds.com",
+        "Price": "10-20 $ per two",
+        "Rating": "4",
+        "image": "https://st3.depositphotos.com/3938905/12569/i/450/depositphotos_125691960-stock-photo-mcdonalds-character-pretending-to-thinking.jpg",
+        "Phone":"01935000",
+        "Website":"https://roadsterdiner.com/"
+        },
+        {
+          "restaurant_id": 10,
+          "restaurant_name": "Burger King",
+          "Address": "Zalka",
+          "email": "Info@bk.com",
+          "Price": "10-20 $ per two",
+          "Rating": "4",
+          "image": "https://bklebanon.com/Content/pictures/TRIPPLE-WHOPPER.png?dummy=12443",
+          "Phone":"04935000",
+          "Website":"https://bklebanon.com/"
+          },
+          {
+            "restaurant_id": 10,
+            "restaurant_name": "Burger King",
+            "Address": "Zalka",
+            "email": "Info@bk.com",
+            "Price": "10-20 $ per two",
+            "Rating": "4",
+            "image": "https://bklebanon.com/Content/pictures/TRIPPLE-WHOPPER.png?dummy=12443",
+            "Phone":"04935000",
+            "Website":"https://bklebanon.com/"
+            },
+            {
+              "restaurant_id": 10,
+              "restaurant_name": "Burger King",
+              "Address": "Zalka",
+              "email": "Info@bk.com",
+              "Price": "10-20 $ per two",
+              "Rating": "4",
+              "image": "https://bklebanon.com/Content/pictures/TRIPPLE-WHOPPER.png?dummy=12443",
+              "Phone":"04935000",
+              "Website":"https://bklebanon.com/"
+              }]
 }

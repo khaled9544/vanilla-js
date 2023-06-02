@@ -38,21 +38,48 @@
 .flex-item:not(:last-child) {
     margin-bottom: 10px;
 }
- #Posts > div{
-
-    background-color: aqua;
-    font-size: 2em;
-    border-radius: 30px;
-    display:flex;
-   
- }
-img{
-    width: 300px;
-    height: 200px;
-
+ 
+ img  {
+    width: 250px;
+    height: 250px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding: 10px;
     
  }
- @media only screen and (min-width:800px){
-    img{
-  column-count: 1;
-    }}
+
+ 
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+
+}
+  #post {
+    border: 4px solid black;
+    font: size 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 20px;
+    max-width:max-content;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    height:fit-content;
+    margin:auto;
+    box-shadow: 2px 2px 11px -2px gray;
+   
+  }
+  .footer {
+    position: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color:black;
+    text-align: center;
+    background-color: #f1f1f1;
+    
+  }
+  

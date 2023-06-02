@@ -1,14 +1,21 @@
+
 function appendData(restaurants) {
-  let mainContainer = document.getElementById("posts");
-  restaurants.forEach(element => {
-    let div = document.createElement("div");
-    div.innerHTML = `${element.Resturant_id} resturant name ${element.Resturant_name} address ${element.Address}
-        email ${element.email} <img src=${element.image}>`;
+  let mainContainer = document.getElementById("post");
+  console.log(restaurants);
+
+restaurants.forEach(element => {
+    let div = document.createElement("post");
+    div.innerHTML = ` <img src=${element.image}> </br> ${element.restaurant_name}</br> ${element.Address}
+    </br> ${element.email} </br> ${element.Phone}</br> ${element.Website} </br> Average Price  ${element.Price} 
+    </br> Rating ${element.Rating}*`;
+    
     mainContainer.appendChild(div);
+   
   });
 }
 
-function addRandomRestaurant(restaurants) {
+
+/*function addRandomRestaurant(restaurants) {
   const _restaurants = [...restaurants];
   const newRestaurant = {
       "Resturant_id": "khaled",
@@ -40,16 +47,21 @@ const putPosts = () => {
 }
 
 putPosts();
-
+*/
 const getPosts = () => {
   fetch('test.json', {
     method: 'GET',
   })
     .then((response) => response.json())
     .then((json) => {
-      const restaurants = addRandomRestaurant(json.restaurants);
-      appendData(restaurants);
+      
+      appendData(json.restaurants);
     });
 }
 
 getPosts();
+
+function Redirect() {
+  
+      window.location.replace('http://localhost:5500/orders.html');
+  }

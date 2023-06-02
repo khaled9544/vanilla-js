@@ -2,7 +2,7 @@
 // const axios = require('axios');
 
 
-const isLogin = sessionStorage.getItem("user");
+/*const isLogin = sessionStorage.getItem("user");
 
 if (isLogin) {
     window.location.replace('http://localhost:5500/dashboard.html');
@@ -23,15 +23,16 @@ console.log('Current date and time in France:', formattedDate);
     axios.get('https://jsonplaceholder.typicode.com/todos');
 
 
-
+*/
 
 function check(form) {
     if (form.email.value == "123" && form.password.value == "123") {
         // window.location.href = 'http://localhost:5500/dashboard.html';
         window.location.replace('http://localhost:5500/dashboard.html');
-        sessionStorage.setItem("user", form.email.value)
+        //sessionStorage.setItem("user", form.email.value);
     }
     else {
         alert("Incorrect UserName or Bad Password");
     }
 }
+
