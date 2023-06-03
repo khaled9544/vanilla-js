@@ -1,16 +1,42 @@
 
 function appendData(restaurants) {
-  let mainContainer = document.getElementById("post");
-  console.log(restaurants);
-
-restaurants.forEach(element => {
-    let div = document.createElement("post");
-    div.innerHTML = ` <img src=${element.image}> </br> ${element.restaurant_name}</br> ${element.Address}
-    </br> ${element.email} </br> ${element.Phone}</br> ${element.Website} </br> Average Price  ${element.Price} 
-    </br> Rating ${element.Rating}*`;
+  const mainContainer = document.getElementById("restaurants");
+  restaurants.forEach(restaurant => {
     
-    mainContainer.appendChild(div);
-   
+    const parentDiv = document.createElement("div");
+    parentDiv.classList.add('restaurant-parent');
+    
+    const imageRestaurant = document.createElement("img");
+    imageRestaurant.setAttribute('src',restaurant.image);
+    parentDiv.appendChild(imageRestaurant);
+    
+    const restaurantDescription = document.createElement('div');
+    restaurantDescription.classList.add('restaurant-description');
+    parentDiv.appendChild(restaurantDescription);
+    
+    const name = document.createElement('h3');
+    name.innerHTML = restaurant.restaurant_name;
+    restaurantDescription.appendChild(name);
+    
+    const address = document.createElement('span'); 
+    address.classList.add('restaurant-address');
+    address.innerHTML = restaurant.Address;
+    restaurantDescription.appendChild(address);
+    
+    const phoneNumber = document.createElement('span'); 
+    phoneNumber.classList.add('restaurant-phone-number');
+    phoneNumber.innerHTML = restaurant.Phone;
+    restaurantDescription.appendChild(phoneNumber);
+
+    // TODO: Add the website.
+    
+    const avgPrice = document.createElement('span'); 
+    avgPrice.classList.add('restaurant-avg-price');
+    avgPrice.innerHTML = restaurant.Price;
+    restaurantDescription.appendChild(avgPrice);
+    
+    mainContainer.appendChild(parentDiv);
+
   });
 }
 
@@ -54,7 +80,7 @@ const getPosts = () => {
   })
     .then((response) => response.json())
     .then((json) => {
-      
+
       appendData(json.restaurants);
     });
 }
@@ -62,6 +88,6 @@ const getPosts = () => {
 getPosts();
 
 function Redirect() {
-  
-      window.location.replace('http://localhost:5500/orders.html');
-  }
+
+  window.location.replace('http://localhost:5500/orders.html');
+}
