@@ -1,16 +1,15 @@
 
 function appendData(restaurants) {
   const mainContainer = document.getElementById("restaurants");
+
   restaurants.forEach(restaurant => {
+    const parentDiv = document.createElement("div"); // random div
+    parentDiv.classList.add('restaurant-parent'); // div with class name restaurant-parent
     
-    const parentDiv = document.createElement("div");
-    
-    parentDiv.classList.add('restaurant-parent');
-    
-    
-    const imageRestaurant = document.createElement("img");
-    imageRestaurant.setAttribute('src',restaurant.image);
-    parentDiv.appendChild(imageRestaurant);
+    const imageRestaurant = document.createElement("img"); // random img
+    imageRestaurant.setAttribute('src', restaurant.image); // randim img src=""
+
+    parentDiv.appendChild(imageRestaurant); // <div><img /></div>
     
     const restaurantDescription = document.createElement('div');
     restaurantDescription.classList.add('restaurant-description');
@@ -21,38 +20,43 @@ function appendData(restaurants) {
     name.innerHTML = restaurant.restaurant_name;
     restaurantDescription.appendChild(name);
     
-    const address = document.createElement('span'); 
-    address.classList.add('restaurant-address');
-    address.innerHTML = restaurant.Address;
-    restaurantDescription.appendChild(address);
-    
-    
+    // const address = document.createElement('span'); 
+    // address.classList.add('restaurant-address');
+    // address.innerHTML = restaurant.Address;
+    // restaurantDescription.appendChild(address);
 
-    // TODO: Add the website.
-    
+    const restaurantDetailsParent = document.createElement('div');
+    restaurantDetailsParent.classList.add('restaurant-details-parent');
+    restaurantDescription.append(restaurantDetailsParent);
+
     
     const avgPrice = document.createElement('span'); 
     avgPrice.classList.add('restaurant-avg-price');
     avgPrice.innerHTML = restaurant.Price;
-    restaurantDescription.appendChild(avgPrice);
+    restaurantDetailsParent.appendChild(avgPrice);
+
+    const time = document.createElement('span'); 
+    time.classList.add('restaurant-time');
+    time.innerHTML = restaurant.time;
+    restaurantDetailsParent.appendChild(time);
 
 
-    const phoneNumber = document.createElement('span'); 
-    phoneNumber.classList.add('restaurant-phone-number');
-    phoneNumber.innerHTML = `</br> ${restaurant.Phone}`;
-    restaurantDescription.appendChild(phoneNumber);
+    // const phoneNumber = document.createElement('span'); 
+    // phoneNumber.classList.add('restaurant-phone-number');
+    // phoneNumber.innerHTML = `${restaurant.Phone}`;
+    // restaurantDescription.appendChild(phoneNumber);
 
     const RestaurantRating = document.createElement('span'); 
-    RestaurantRating.classList.add('restaurant-Rating');
-    RestaurantRating.innerHTML = `</br> Rating ${restaurant.Rating}`;
-    restaurantDescription.appendChild(RestaurantRating);
+    RestaurantRating.classList.add('restaurant-rating');
+    RestaurantRating.innerHTML = `Rating ${restaurant.Rating}`;
+    restaurantDetailsParent.appendChild(RestaurantRating);
 
     
     
-    const webSite = document.createElement('span'); 
-    webSite.classList.add('restaurant-webSite');
-    webSite.innerHTML =`</br> ${restaurant.webSite}`;
-    restaurantDescription.appendChild(webSite);
+    // const webSite = document.createElement('span'); 
+    // webSite.classList.add('restaurant-website');
+    // webSite.innerHTML =`${restaurant.webSite}`;
+    // restaurantDescription.appendChild(webSite);
     
 
 
@@ -130,7 +134,7 @@ const Mall1= new Malls();
 console.log(Mall1);
     
 
-document.getElementById("Malls").innerHTML = `${Mall1.name}`;
+// document.getElementById("Malls").innerHTML = `${Mall1.name}`;
 
 
 

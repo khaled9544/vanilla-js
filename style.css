@@ -46,6 +46,15 @@ body {
 
 /* ------------------------- */
 
+#restaurants {
+    border: solid black;
+    
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px 50px 25px;
+}
 
 .restaurant-parent {
     box-shadow: 2px 2px 11px -2px gray;
@@ -72,6 +81,12 @@ body {
     margin: 10px;
 }
 
+#restaurants .restaurant-parent .restaurant-details-parent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 /* .header {
     background-color: #f1f1f1;
     padding: 20px;
@@ -79,15 +94,6 @@ body {
 
 } */
 
-#restaurants {
-    border: solid black;
-    
-    max-width: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 25px 50px 25px;
-}
 
 /* .footer {
     position: block;
