@@ -45,7 +45,7 @@ function appendData(restaurants) {
     
     const Rating = document.createElement('mark'); 
     Rating.classList.add('restaurant-rating');
-    Rating.innerHTML = `&#9734; ${restaurant.Rating}`;
+    Rating.innerHTML = `&#9733; ${restaurant.Rating}`;
     restaurantDetailsParent.appendChild(Rating);
 
 
