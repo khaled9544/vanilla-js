@@ -30,15 +30,23 @@ function appendData(restaurants) {
     restaurantDescription.append(restaurantDetailsParent);
 
     
-    const avgPrice = document.createElement('span'); 
-    avgPrice.classList.add('restaurant-avg-price');
-    avgPrice.innerHTML = restaurant.Price;
-    restaurantDetailsParent.appendChild(avgPrice);
+    
 
     const time = document.createElement('span'); 
     time.classList.add('restaurant-time');
     time.innerHTML = restaurant.time;
     restaurantDetailsParent.appendChild(time);
+
+    const Price = document.createElement('span'); 
+    Price.classList.add('restaurant-price');
+    Price.innerHTML = restaurant.Price;
+    restaurantDetailsParent.appendChild(Price);
+
+    
+    const Rating = document.createElement('mark'); 
+    Rating.classList.add('restaurant-rating');
+    Rating.innerHTML = `&#9734; ${restaurant.Rating}`;
+    restaurantDetailsParent.appendChild(Rating);
 
 
     // const phoneNumber = document.createElement('span'); 
@@ -46,10 +54,7 @@ function appendData(restaurants) {
     // phoneNumber.innerHTML = `${restaurant.Phone}`;
     // restaurantDescription.appendChild(phoneNumber);
 
-    const RestaurantRating = document.createElement('span'); 
-    RestaurantRating.classList.add('restaurant-rating');
-    RestaurantRating.innerHTML = `Rating ${restaurant.Rating}`;
-    restaurantDetailsParent.appendChild(RestaurantRating);
+   
 
     
     
@@ -121,20 +126,6 @@ function Redirect() {
   window.location.replace('http://localhost:5500/orders.html');
 }
 
-class Malls {
-
-  id= "1"
-  name = "Roadster";
-  Address= "Zaytouna Bey";
-}
-//console.log(Malls);
-
-
-const Mall1= new Malls();
-console.log(Mall1);
-    
-
-// document.getElementById("Malls").innerHTML = `${Mall1.name}`;
 
 
 
