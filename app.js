@@ -6,8 +6,16 @@ function appendData(restaurants) {
     const parentDiv = document.createElement("div"); // random div
     parentDiv.classList.add('restaurant-parent'); // div with class name restaurant-parent
     
-    const imageRestaurant = document.createElement("img"); // random img
-    imageRestaurant.setAttribute('src', restaurant.image); // randim img src=""
+    const imageRestaurant = document.createElement("img");// random img
+    imageRestaurant.classList.add('restaurant-image1');
+    imageRestaurant.setAttribute('src',restaurant.image); 
+     // random img src=""
+    
+     //const imageLogo = document.createElement('span'); 
+    // imageLogo.classList.add('restaurant-logo');
+    // imageLogo.innerHTML = restaurant.time;
+     //imageRestaurant1.appendChild(imageLogo);
+    
 
     parentDiv.appendChild(imageRestaurant); // <div><img /></div>
     
